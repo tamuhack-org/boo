@@ -1,0 +1,51 @@
+.box {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  cursor: pointer;
+
+  h1 {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.box:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 16px 0;
+  max-width: 80%;
+
+  img {
+    border-radius: 6px;
+    max-height: 99%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .group {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

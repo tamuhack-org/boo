@@ -1,18 +1,23 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import { DocsThemeConfig } from "nextra-theme-docs";
+import { Box, BoxGroup } from "./components/Box";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span>TAMUhack Dev</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: "https://github.com/tamuhack-org",
   },
   chat: {
-    link: 'https://discord.com',
+    link: "https://github.com/tamuhack-org",
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: "https://github.com/tamuhack-org",
   footer: {
-    text: 'Nextra Docs Template',
+    component: <div></div>,
   },
-}
+  //primaryHue: 300,
+  components: {
+    Box: Box,
+    BoxGroup: BoxGroup,
+  },
+};
 
-export default config
+export default config;
