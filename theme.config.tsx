@@ -6,10 +6,11 @@ const config: DocsThemeConfig = {
   project: {
     link: "https://github.com/tamuhack-org",
   },
-  chat: {
-    link: "https://github.com/tamuhack-org",
+  darkMode: false,
+  docsRepositoryBase: "https://github.com/tamuhack-org/boo",
+  toc: {
+    title: "",
   },
-  docsRepositoryBase: "https://github.com/tamuhack-org",
   footer: {
     component: <div></div>,
   },
