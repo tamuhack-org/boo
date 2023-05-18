@@ -14,7 +14,7 @@ $ npm i
 Then, create a `.env` file in the root of the project and add the following: 
 
 ```bash filename=".env" copy
-NEXT_URL="http://localhost:3000/api/auth"
+NEXT_URL=
 NEXTAUTH_SECRET=
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
@@ -72,5 +72,5 @@ Follow the above steps 👆
 The PostgreSQL database URL. A PostgreSQL database can be hosted on many platforms, including Heroku, AWS, and Vercel.
 We recommend Vercel because it's free and easy to set up.
 
-Example: `DATABASE_PRISMA_URL="postgresql://postgres:password@localhost:5432/helpr?pgbouncer=true&connect_timeout=15"`
+Example: `DATABASE_PRISMA_URL="postgresql://postgres:password@localhost:5432/vercel?pgbouncer=true&connect_timeout=15"`
 
