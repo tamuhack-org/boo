@@ -1,5 +1,6 @@
 import { DocsThemeConfig } from "nextra-theme-docs";
 import { Box, BoxGroup } from "./components/Box";
+import { Callout } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
   logo: <span>TAMUhack Dev</span>,
@@ -18,6 +19,7 @@ const config: DocsThemeConfig = {
   components: {
     Box: Box,
     BoxGroup: BoxGroup,
+    Callout: Callout,
   },
 };
 
